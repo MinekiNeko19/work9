@@ -9,8 +9,12 @@ void print_cat(struct cat c) {
 }
 
 // function to make a new struct
-struct cat * add_cat() {
-
+struct cat * add_cat(char n[20], int a, b[20]) {
+    struct cat * c = malloc(sizeof(struct cat));
+    c -> name = n;
+    c -> age = a;
+    c -> breed = b;
+    return c;
 }
 
 // main function
@@ -20,5 +24,10 @@ int main() {
     Joline.age = 5;
     strcpy(Joline.breed, "Calico");
     print_cat(Joline);
+
+    struct cat * Mark;
+    Mark = add_cat("Mark", 3, "Siamese");
+    print_cat(Mark);
+
     return 0;
 }
