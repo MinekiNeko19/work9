@@ -27,6 +27,7 @@ int main() {
 
     struct cat * Mark = add_cat("Mark", 3, "Siamese");
     print_cat(Mark);
+    free(Mark);
 
     return 0;
 }
