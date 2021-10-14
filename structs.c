@@ -4,7 +4,7 @@ struct cat {char name[20]; int age; char breed[20];};
 
 // function to print out the values in the struct
 void print_cat(struct cat c) {
-    printf("This is the information on the cat, %s. %s is %d years old and is a %s.\t",
+    printf("This is the information on the cat, %s. %s is %d years old and is a %s.\n",
         c.name,c.name,c.age,c.breed);
 }
 
@@ -16,9 +16,9 @@ struct cat * add_cat() {
 // main function
 int main() {
     struct cat Joline;
-    Joline.name = strcpy("Joline");
+    strcpy(Joline.name, "Joline");
     Joline.age = 5;
-    Joline.breed = strcpy("Calico");
+    strcpy(Joline.breed, "Calico");
     print_cat(Joline);
     return 0;
 }
